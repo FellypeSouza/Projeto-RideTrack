@@ -1,0 +1,22 @@
+nav{
+    background-color: #000100;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    .navLinks{
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        a{
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            figcaption{
+                color: #5f5f5f;
+                font-size: 0.70rem;
+            }
+        }
+    }
+}

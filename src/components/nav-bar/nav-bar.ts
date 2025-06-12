@@ -1,0 +1,26 @@
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+
+@Component({
+  selector: 'app-nav-bar',
+  imports: [],
+  templateUrl: './nav-bar.html',
+  styleUrl: './nav-bar.scss'
+})
+export class NavBar {
+  constructor(private router: Router){}
+  switchPage(value:string):void{
+    if (value == "Início") {
+      this.router.navigateByUrl("");
+    }
+    else if(value == "Treino"){
+      this.router.navigateByUrl("speedometer");
+    }
+    else if(value == "Histórico"){
+      
+    }
+    else{
+
+    }
+  }
+}
