@@ -8,7 +8,9 @@ import { Router } from '@angular/router';
   styleUrl: './nav-bar.scss'
 })
 export class NavBar {
+  
   constructor(private router: Router){}
+
   switchPage(value:string):void{
     if (value == "Início") {
       this.router.navigateByUrl("");

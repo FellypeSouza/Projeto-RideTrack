@@ -18,6 +18,7 @@
           "builder": "@angular/build:application",
           "options": {
             "browser": "src/main.ts",
+            "outputPath": "docs",
             "polyfills": [
               "zone.js"
             ],
@@ -59,7 +60,11 @@
         },
         "serve": {
           "builder": "@angular/build:dev-server",
+          "options": {
+            "allowedHosts": ["localhost",".ngrok-free.app"]
+          },
           "configurations": {
+            
             "production": {
               "buildTarget": "main:build:production"
             },

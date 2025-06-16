@@ -1,0 +1,27 @@
+.pageContainer{
+        .speedometer{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            h1{
+                font-size: 5rem;
+                margin: 0;
+            }
+            h3{
+
+            }
+            .speedometerButtons{
+                .startBtn, .stopBtn{
+                    border: none;
+                    cursor: pointer;
+                }
+                .startBtn{
+                    background-color: rgb(36, 222, 255);
+                }
+                .stopBtn{
+                    
+                }
+            }
+        }
+}

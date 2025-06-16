@@ -1,1 +1,17 @@
-<p>speedometer-page works!</p>
+<section class="pageContainer">
+        <section class="speedometer">
+            <section>
+                <h1>{{speedElement}}</h1>
+                <h3>KM/H</h3>
+            </section>
+            <section class="speedometerButtons">
+                @if(changeButton){
+                    <button (click)="startSpeedometer()">Iniciar</button>
+                }
+                @else {
+                    <button (click)="stopSpeedometer()">Parar</button>
+                }
+            </section>
+        </section>
+    <app-nav-bar></app-nav-bar>
+</section>
