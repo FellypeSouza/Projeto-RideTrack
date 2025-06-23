@@ -8,5 +8,5 @@ import { NavBar } from '../../components/nav-bar/nav-bar';
   styleUrl: './activity-details-page.scss'
 })
 export class ActivityDetailsPage {
-
+  activities:any[] = [];
 }

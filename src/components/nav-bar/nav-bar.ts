@@ -15,8 +15,8 @@ export class NavBar {
     if (value == "Início") {
       this.router.navigateByUrl("");
     }
-    else if(value == "Treino"){
-      this.router.navigateByUrl("speedometer");
+    else if(value == "workout"){
+      this.router.navigateByUrl("workout");
     }
     else if(value == "Histórico"){
       
