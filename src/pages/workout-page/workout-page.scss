@@ -2,8 +2,10 @@
     color: #fff;
     .typeOfWorkouts{
         display: flex;
-        justify-content: space-evenly;
-        margin: 1rem;
+        justify-content: space-between;
+        max-width: 1000px;
+        margin: auto;
+        margin-top: 1rem;
         .workout{
             display: flex;
             flex-direction: column;

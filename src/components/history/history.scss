@@ -1,0 +1,33 @@
+.historyContainer{
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 2rem;
+    background-color: rgb(20, 20, 20);
+    padding: 1rem;
+    border-radius: 20px;
+    h1{
+        margin: 0;
+    }
+    .historyItems{
+        font-weight: 300;
+        margin: 1rem 0 0 0;
+        display: grid;
+        justify-content: center;
+        gap: 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+        .item{
+            width: 270px;
+            display: flex;
+            align-items: center;
+            .itemImg{
+                cursor: pointer;
+            }
+            .itemInfo{
+                margin-left: 0.5rem;
+            }
+        }
+    }
+}
+.specialText{
+    color: rgb(155, 154, 154);
+}
