@@ -1,0 +1,21 @@
+.typeOfWorkouts{
+        display: flex;
+        justify-content: space-between;
+        max-width: 1000px;
+        margin: auto;
+        margin-top: 1rem;
+        .workout{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .imgContainer{
+                background-color: rgb(20, 20, 20);
+                padding: 0.70rem;
+                border-radius: 20px;
+                cursor: pointer;
+            }
+            p{
+                margin: 0;
+            }
+        }        
+    }
