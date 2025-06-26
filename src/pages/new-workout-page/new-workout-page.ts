@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import { Map } from '../../components/map/map';
 import { ManageTypeOfWorkoutService } from '../../services/manageTypeOfWorkout/manage-type-of-workout-service';
 import { OnInit } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-new-workout-page',
-  imports: [Map],
+  imports: [Map, RouterLink],
   templateUrl: './new-workout-page.html',
   styleUrl: './new-workout-page.scss'
 })
