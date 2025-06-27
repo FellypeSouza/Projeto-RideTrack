@@ -29,7 +29,7 @@ export class Map implements AfterViewInit {
       }).addTo(this.map);
   
       L.marker([latitude, longitude]).addTo(this.map)
-        .bindPopup('Marcador em SP')
+        .bindPopup('Eu')
         .openPopup();
 
     }, 

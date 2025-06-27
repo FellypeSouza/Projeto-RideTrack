@@ -1,11 +1,68 @@
-.pageContainer{
+.pageContainer {
     color: #fff;
-    .newWorkoutContainer{
-        .backIcon{
-            a{
-                font-size: 2rem;
-                text-decoration: none;
+    .newWorkoutContainer {
+        .workoutInfo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 1rem;
+            .time{
+                text-align: right;
+                h1{
+                    font-size: 2rem;
+                    font-weight: 300;
+                    margin: 0;
+                }
+                p{
+                    font-size: 1.25rem;
+                    font-weight: 300;
+                    margin: 0;
+                }
+            }
+            .title {
+
+                h1 {
+                    font-size: 2rem;
+                    font-weight: 300;
+                    margin: 0;
+                }
+
+                a {
+                    font-size: 2rem;
+                    text-decoration: none;
+                    color: #fff;
+                }
+
+                a:hover {
+                    color: rgb(0, 102, 255);
+                    transition: all 250ms;
+                }
+
+                a:not(:hover) {
+                    transition: all 250ms;
+                }
+            }
+        }
+        .workoutButtons{
+            position: absolute;
+            bottom: 0;
+            z-index: 1;
+            width: 100%;
+            text-align: center;
+            button{
+                padding: 1rem 3rem 1rem 3rem;
+                margin: 1rem;
+                border: none;
                 color: #fff;
+                border-radius: 50px;
+                cursor: pointer;
+            }
+            .startBtn{
+                background-color: rgb(0, 102, 255);
+                
+            }
+            .stopBtn{
+                background-color: rgb(187, 0, 0);
             }
         }
     }

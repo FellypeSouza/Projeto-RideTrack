@@ -1,9 +1,23 @@
 <section class="pageContainer">
     <section class="newWorkoutContainer">
-        <section class="backIcon">
-            <a routerLink="">←</a>
+        <section class="workoutInfo">
+            <section class="title">
+                <a routerLink="">←</a>
+                <h1>{{typeOfWorkout}}</h1>
+            </section>
+            <section class="time">
+                <h1>Duração</h1>
+                <p>00:50:00</p>
+            </section>
         </section>
-        <h1>{{typeOfWorkout}}</h1>
         <app-map></app-map>
+        <section class="workoutButtons">
+            @if(statusButton){
+                <button class="startBtn">INICIAR</button>
+            }
+            @else {
+                <button class="stopBtn">PARAR</button>
+            }
+        </section>
     </section>
 </section>

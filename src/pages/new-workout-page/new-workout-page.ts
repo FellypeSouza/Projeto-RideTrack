@@ -12,6 +12,7 @@ import { RouterLink } from '@angular/router';
 })
 export class NewWorkoutPage implements OnInit {
   typeOfWorkout:string = "";
+  statusButton: boolean = true;
 
   ngOnInit(): void {
     this.typeOfWorkout = this.manageTypeOfWorkoutService.exportTypeOfWorkout()

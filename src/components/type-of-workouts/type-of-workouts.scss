@@ -1,21 +1,42 @@
-.typeOfWorkouts{
+.pageContainer {
+    .title {
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    .typeOfWorkouts {
         display: flex;
         justify-content: space-between;
         max-width: 1000px;
         margin: auto;
-        margin-top: 1rem;
-        .workout{
+        margin-top: 2rem;
+
+        .workout {
             display: flex;
             flex-direction: column;
             align-items: center;
-            .imgContainer{
+
+            .imgContainer {
                 background-color: rgb(20, 20, 20);
                 padding: 0.70rem;
                 border-radius: 20px;
                 cursor: pointer;
             }
-            p{
+
+            p {
                 margin: 0;
             }
-        }        
+        }
+        .workout:hover{
+            p{
+                color: rgb(61, 139, 255);
+                transition: all 250ms;
+            }
+        }
+        .workout:not(:hover){
+            p{
+                transition: all 250ms;
+            }
+        }
     }
+}
