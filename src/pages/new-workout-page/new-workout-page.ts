@@ -17,5 +17,13 @@ export class NewWorkoutPage implements OnInit {
   ngOnInit(): void {
     this.typeOfWorkout = this.manageTypeOfWorkoutService.exportTypeOfWorkout()
   }
+
+  startNewWorkout():void{
+    this.statusButton = false;
+  }
+  stopNewWorkout():void{
+    this.statusButton = true;
+  }
+
   constructor(private manageTypeOfWorkoutService : ManageTypeOfWorkoutService){}
 }

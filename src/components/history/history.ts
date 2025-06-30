@@ -7,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './history.scss'
 })
 export class History {
-
+  historyItems:any[] = [
+    
+  ];
 }

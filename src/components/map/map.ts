@@ -22,15 +22,13 @@ export class Map implements AfterViewInit {
       const latitude = position.coords.latitude;
       const longitude = position.coords.longitude;
 
-      this.map = L.map('map').setView([latitude, longitude], 13); // São Paulo como exemplo
-  
+      this.map = L.map('map').setView([latitude, longitude], 13);
+
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '© OpenStreetMap contributors'
       }).addTo(this.map);
   
       L.marker([latitude, longitude]).addTo(this.map)
-        .bindPopup('Eu')
-        .openPopup();
 
     }, 
     (error)=>{

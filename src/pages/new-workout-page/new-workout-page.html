@@ -13,10 +13,10 @@
         <app-map></app-map>
         <section class="workoutButtons">
             @if(statusButton){
-                <button class="startBtn">INICIAR</button>
+                <button class="startBtn" (click)="startNewWorkout()">INICIAR</button>
             }
             @else {
-                <button class="stopBtn">PARAR</button>
+                <button class="stopBtn" (click)="stopNewWorkout()">PARAR</button>
             }
         </section>
     </section>
